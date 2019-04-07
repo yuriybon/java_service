@@ -38,12 +38,12 @@ class CoolCarController {
     }
 
     @GetMapping(
-            value = "/get-image-with-media-type
+            value = "/get-image-with-media-type",
             produces = MediaType.IMAGE_JPEG_VALUE
     )
     public @ResponseBody
     byte[] getImageWithMediaType() throws IOException {
-        InputStream in = getClass().getResourceAsStream("/ua/bondary/produceimage/image.jpg");
+        InputStream in = getClass().getResourceAsStream("/ua/bondary/produceimage/look-36354.jpg");
 
         return IOUtils.toByteArray(in);
     }
